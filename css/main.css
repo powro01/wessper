@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.top-header {
+  width: 100%;
+  height: 80px;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 10px 29px -12px rgba(0, 0, 0, 0.74);
+  z-index: 999999; }
+  .top-header .logo {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    float: left; }
+  .top-header .navigation {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.65); }
+    .top-header .navigation .navigation-list {
+      width: 100%;
+      display: inline-block; }
+  .top-header .icon-bar {
+    width: 50%;
+    height: 80px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #21567c; }
+    .top-header .icon-bar .icon-list {
+      width: auto;
+      text-align: right; }
+      .top-header .icon-bar .icon-list li {
+        width: auto;
+        float: left;
+        margin-left: 15px; }
+        .top-header .icon-bar .icon-list li img {
+          width: 1em; }
+      .top-header .icon-bar .icon-list .menu-trigger {
+        width: 40px;
+        height: 32px;
+        cursor: pointer; }
+        .top-header .icon-bar .icon-list .menu-trigger .bar {
+          display: block;
+          width: 40px;
+          height: 4px;
+          margin-bottom: 4px;
+          background: #21567c;
+          border-radius: 2px; }
