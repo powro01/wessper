@@ -6,6 +6,7 @@
         <meta name="author" content="kamilpowroznik.pl">
         <title>Wessper</title>
         <link rel="stylesheet" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -16,10 +17,20 @@
             </div>
             <nav class="navigation" id="navigation">
                 <ul class="navigation-list">
-                    <li>Produkty</li>
-                    <li>O nas</li>
-                    <li>Dystrybucja</li>
-                    <li>Kontakt</li>
+                    <li>
+                        <a href="#" id="collapse">Produkty</a>
+                        <ul class="collapse">
+                            <li><a href="#">Szczoteczki do zębów</a></li>
+                            <li><a href="#">Systemy filtracji</a></li>
+                            <li><a href="#">Akcesoria kuchenne</a></li>
+                            <li><a href="#">Akcesoria do odkurzaczy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">O nas</a>
+                    </li>
+                    <li><a href="#">Dystrybucja</a></li>
+                    <li><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="icon-bar">
@@ -36,11 +47,82 @@
             </div>
         </header>
         <div class="slider">
+            <span class="__prev fa fa-chevron-left" id="prevSlide"></span>
+            <span class="__next fa fa-chevron-right" id="nextSlide"></span>
             <div class="siema">
                 <div><img src="img/slide1.jpeg"></div>
-                <div><a href="http://placehold.it"><img src="http://placehold.it/350x150"></a></div>
+                <div><img src="img/slide2.jpeg"></div>
             </div>
         </div>
+        <div class="offer">
+            <ul class="offer-list">
+                <a href="#">
+                    <li class="offer-item">
+                        <div class="__hover-overlay">
+                            <span class="fa fa-arrow-right"></span>
+                        </div>
+                        <div class="__caption">
+                            <h3>18 rodzajów końcówek</h3>
+                            <span>do szczoteczek elektrycznych!</span>
+                        </div>
+                        <img src="img/slide2.jpeg">
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="offer-item">
+                        <div class="__hover-overlay">
+                            <span class="fa fa-arrow-right"></span>
+                        </div>
+                        <div class="__caption">
+                            <h3>Jak poprawnie zadbać o swoje zęby</h3>
+                            <span>sprawdź nowy wpis na blogu!</span>
+                        </div>
+                        <img src="img/slide1.jpeg">
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="offer-item">
+                        <div class="__hover-overlay">
+                            <span class="fa fa-arrow-right"></span>
+                        </div>
+                        <div class="__caption">   
+                                <h3>Syntetyczne worki do odkurzaczy</h3>
+                                <span>Zadbaj o czystość w domu i zdrowie rodziny</span>                                
+                        </div>
+                        <img src="img/offer.jpg">
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="offer-item">
+                        <div class="__hover-overlay">
+                            <span class="fa fa-arrow-right"></span>
+                        </div>
+                        <div class="__caption">
+                            <h3>Example</h3>
+                            <span>Example</span>
+                        </div>
+                        <img src="http://placehold.it/800x500">
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="newstller">
+            <div class="__container">
+                <div class="text">
+                    <h2>Dołącz do klubu Wessper</h2>
+                    <p>odbieraj prezenty i bądź na bieżąco z nowościami!</p>
+                </div>
+                <div class="form-control">
+                    <form method="post">
+                        <input type="email" placeholder="wpisz adres e-mail">
+                        <button type="submit" class="btn btn--green">Dołącz teraz</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <img src="img/logo.png">
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/siema.min.js"></script>
         <script src="js/main.js"></script>
