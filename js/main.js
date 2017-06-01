@@ -24,7 +24,7 @@ nextSlide.on('click', function() {
 
 collapse.on('click', function(e) {
     e.preventDefault();
-    collapseList.slideToggle();
+    collapseList.toggleClass('open');
 })
 
 setInterval(function() {
