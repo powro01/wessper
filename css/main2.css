@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+
+.top-header {
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 3%;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
+  .top-header .logo {
+    width: auto;
+    height: 80px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .top-header .navigation {
+    width: auto;
+    float: left; }
+  .top-header .icon-bar {
+    width: auto;
+    float: right;
+    height: 80px; }
+    .top-header .icon-bar .icon-list {
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25em; }
+      .top-header .icon-bar .icon-list li:not(:last-child) {
+        margin-right: 20px; }
+      .top-header .icon-bar .icon-list li img {
+        width: auto;
+        height: 1em; }
+      .top-header .icon-bar .icon-list .menu-trigger {
+        width: 40px;
+        height: 32px;
+        cursor: pointer; }
+        .top-header .icon-bar .icon-list .menu-trigger .bar {
+          display: block;
+          width: 40px;
+          height: 4px;
+          margin-bottom: 4px;
+          border-radius: 2px;
+          background: #21567c; }
+
+.close {
+  font-size: 1.25em;
+  color: #21567c; }

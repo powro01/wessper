@@ -8,11 +8,17 @@ var prevSlide = $('#prevSlide');
 var nextSlide = $('#nextSlide');
 var collapse = $('#collapse');
 var collapseList = $('.collapse');
+var closeCollapse = $('#closeCollapse');
 
 menuTrigger.on('click', function(e) {
     e.preventDefault();
     navigation.toggleClass('open');
 });
+
+closeCollapse.on('click', function(e) {
+    e.preventDefault();
+    collapseList.toggleClass('open');
+})
 
 prevSlide.on('click', function() {
     slider.prev();
@@ -33,4 +39,5 @@ setInterval(function() {
 
 $('a').on('click', function(e) {
     e.preventDefault();
-})
+});
+
